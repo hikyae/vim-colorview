@@ -1,1 +1,1 @@
-syn include syntax/css/vim-coloresque.vim
+syn include syntax/css/vim-colorview.vim

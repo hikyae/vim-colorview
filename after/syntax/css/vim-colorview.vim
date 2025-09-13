@@ -7,18 +7,18 @@
 "               colorizer by lilydjwg (Vim license)
 " vim:et:ts=2 sw=2 sts=2
 
-if exists('g:did_coloresque_loaded') || v:version < 800
+if exists('g:did_colorview_loaded') || v:version < 800
   finish
 endif
 
-let g:did_coloresque_loaded = 1
+let g:did_colorview_loaded = 1
 
 let s:hex={}
 let b:matchescache = {}
 let b:color_pattern = {}
 
 " set buffer iskeyword
-let b:keywords = exists('g:coloresque_keywords') ? g:coloresque_keywords : []
+let b:keywords = exists('g:colorview_keywords') ? g:colorview_keywords : []
 for keyword in b:keywords
     exe printf('setlocal iskeyword+=%s', keyword)
 endfor
@@ -602,7 +602,7 @@ if has('gui_running') || &t_Co==256
     hi cssColorfffff0 guibg=#FFFFF0 guifg=#000000 ctermbg=15  ctermfg=16  | syn cluster cssColors add=cssColorfffff0
     hi cssColorffffff guibg=#FFFFFF guifg=#000000 ctermbg=231 ctermfg=16  | syn cluster cssColors add=cssColorffffff
 
-    augroup coloresque
+    augroup colorview
         au!
         autocmd CursorMovedI <buffer> silent call s:ProcessByLine('.')
         autocmd ColorScheme <buffer> silent call s:VimCssInit(1)
