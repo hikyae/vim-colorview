@@ -1,11 +1,10 @@
-" Name:         Coloresque
-" Language:     color preview in vim
-" Author:       Gorodinskii Konstantin <gor.konstantin@gmail.com>
+" Name:         vim-colorview
+" Description:  Switchable color preview for Vim
+" Author:       hikyae <h1ky43 at gmail.com>
 " Licence:      Vim license
-" Version:      0.9.5
-" based on
-" https://github.com/ap/vim-css-color
-" https://github.com/lilydjwg/colorizer
+" Based on:     Coloresque by Gorodinskii Konstantin (Vim license)
+"               vim-css-color by Aristotle Pagaltzis (MIT)
+"               colorizer by lilydjwg (Vim license)
 " vim:et:ts=2 sw=2 sts=2
 
 if exists('g:did_coloresque_loaded') || v:version < 800
